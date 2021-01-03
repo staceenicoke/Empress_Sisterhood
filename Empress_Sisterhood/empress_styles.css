@@ -1,16 +1,40 @@
 
-
 body{
-    background-color: (#0f292f);
-    background-size: 100%;
-    padding-top: 170px;
-    height: 850px;
-    
-    
-       
-  }
+    background-color: #0f292f;
+   }
+
+   header {
+    height: 100px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: -5%;
+    background-color: #0f292f 
+    }
 
 
 img {
-    width: 25em;
+    width: 20em;
+    margin-inline: 5px;
+}
+
+h1 {
+  font-family: fantasy;
+  color: white;
+  font-size: 90px;
+   text-align: end;   
+}
+
+h2 {
+  font-family: fantasy;
+  color: #14a098;
+  font-size: 60px;
+}
+
+footer {
+  height: 100px;
+  background-image: ;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
