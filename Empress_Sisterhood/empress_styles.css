@@ -1,15 +1,17 @@
 
 body{
     background-color: #0f292f;
-   }
-
-   header {
+    display: flex;
+    flex-direction: row-reverse;
+    }
+  
+   header, footer {
+    display: flex;
     height: 100px;
     position: sticky;
     top: 0;
     width: 100%;
-    margin: -5%;
-    background-color: #0f292f 
+    background-color: #501f3a
     }
 
 
@@ -31,10 +33,3 @@ h2 {
   font-size: 60px;
 }
 
-footer {
-  height: 100px;
-  background-image: ;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
