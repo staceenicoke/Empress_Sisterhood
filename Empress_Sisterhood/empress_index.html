@@ -1,77 +1,166 @@
 <!doctype html>
 <html lang = "eng">
 	<head>
-		<title>"Empresses - Empower. Educate. Enlighten."</title>
-		<link rel="stylesheet" href="empress_styles.css">
-	
+        <title>"Empresses - Empower. Educate. Enlighten."</title>
+        <link rel="stylesheet" href="empress_styles3.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
 	</head>
 
 	<body>
-	  <div = right>
-		<header id = "top" class = "main-header">
-			<H1>Empresses</H1>
-				
-		</header>
+            <div id="page-wrapper">
+                
+            <div id="banner">
+                <h1>
+                    Empresses
+                </h1>
+            </div>
+            
+            <div id="left-panel">    
+                    
+                <div class="slideshow-container">
+                    
+        <div class="mySlides fade">
+        <img src="empress_images\group_color.jpg"
+        alt="Colorful Empresses" style="width:100%">
+        </div>
 
-		
-	</div>
-		
-	<div = left>	
+        <div class="mySlides fade">
+       <img src="empress_images\empower_michelle2.jpg"
+       alt="Empower Like Michelle" style="width:100%">
+       <div class="text">EMPOWER</div>
+       </div>
+       
+       <div class="mySlides fade">
+       <img src="empress_images\couch_reader.jpg"
+       alt="Enjoying a Book" style="width:100%">
+       <div class="text">EDUCATE</div>
+       </div>
 
-		
-	<h2>Empower.</h2> 
-	    
-        <img 
-     src="empress_images\empower_michelle2.jpg"
-     alt="Empower Like Michelle">
+       <div class="mySlides fade">
+       <img src="empress_images\pray.jpg"
+       alt="Pray" style="width:100%">
+       <div class="text">ENLIGHTEN</div>
+       </div>
 
-        <img 
-     src="empress_images\female_empowerment2.jpg" 
-     alt="Female Empowerment">
+       
+       <div class="mySlides fade">
+       <img src="empress_images\discussion_group.jpg" 
+       alt="Empress Talk" style="width:100%">
+       <div class="text">ENCOURAGE</div>
+       </div>
 
-	 <img 
-     src="empress_images\empower_tshirt2.jpg" 
-	 alt="Friends. Mothers. Daughters. Visionaries. Queens. Rulers. Women">
-	 
-	 
-	<h2>Educate.</h2> 
 
-	 <img 
-     src="empress_images\couch_reader.jpg"
-     alt="Enjoying a Book">
+       <div class="mySlides fade">
+       <img src="empress_images\female_empowerment2.jpg" 
+       alt="Female Empowerment" style="width:100%">
+       <div class="text">EMPOWER</div>
+       </div>
+       
+       <div class="mySlides fade">
+       <img src="empress_images\laptop_girls.jpg" 
+       alt="Discussion Group" style="width:100%">
+       <div class="text">EDUCATE</div>
+       </div>    
 
-        <img  
-     src="empress_images\laptop_girls.jpg" 
-     alt="Discussion Group">
+       <div class="mySlides fade">
+           <img src="empress_images\enlighten.jpg" 
+           alt="Enjoy the Beauty" style="width:100%">
+           <div class="text">ENLIGHTEN</div>
+           </div>
 
-	 <img  
-     src="empress_images\floor_study.jpg" 
-	 alt="Researching">
+       <div class="mySlides fade">
+       <img src="empress_images\encourage_tea.jpg" 
+       alt="Be The Most Encouraging Person You Know" style="width:100%">
+       <div class="text">ENCOURAGE</div>
+       </div>
 
-	 <h2>Enlighten.</h2> 
-	 
+       <div class="mySlides fade">
+       <img src="empress_images\empower_tshirt2.jpg" 
+       alt="Friends. Mothers. Daughters. Visionaries. Queens. Rulers. Women"
+       style="width:100%">
+       <div class="text">EMPOWER</div>
+       </div>
 
-	 <img 
-     src="empress_images\pray.jpg"
-     alt="Pray">
+       <div class="mySlides fade">
+       <img src="empress_images\floor_study.jpg" 
+       alt="Researching" style="width:100%">
+       <div class="text">EDUCATE</div>
+       </div>
 
-        <img  
-     src="empress_images\enlighten.jpg" 
-     alt="Enjoy the Beauty">
+       <div class="mySlides fade">
+       <img src="empress_images\influencer.jpg" 
+       alt="Influencer" style="width:100%">
+       <div class="text">ENLIGHTEN</div>
+       </div>
 
-	 <img  
-     src="empress_images\influencer.jpg" 
-	 alt="Influencer">
+       <div class="mySlides fade">
+       <img src="empress_images\beauty_graffiti.jpg" 
+       alt="Everything Has Beauty But Not Everyone Can See It" style="width:100%">
+       <div class="text">ENCOURAGE</div>
+       </div>
+                 
+       </div>
+       <br>
+       
+       <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span> 
+         <span class="dot" onclick="currentSlide(4)"></span> 
+         <span class="dot" onclick="currentSlide(5)"></span> 
+         <span class="dot" onclick="currentSlide(6)"></span> 
+         <span class="dot" onclick="currentSlide(7)"></span> 
+         <span class="dot" onclick="currentSlide(8)"></span> 
+         <span class="dot" onclick="currentSlide(9)"></span> 
+         <span class="dot" onclick="currentSlide(10)"></span> 
+         <span class="dot" onclick="currentSlide(11)"></span> 
+         <span class="dot" onclick="currentSlide(12)"></span> 
+         <span class="dot" onclick="currentSlide(13)"></span> 
+       </div>
+       
+       <script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
+       
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+       
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+       
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+         }
+         for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+       }
+       </script>                    
 
-	 <h2>Encourage.</h2>
+</div>
 
-		</div>
-
-		<div=Bottom>
-			<Footer>
-				"Footer"
-			</Footer>
-
-		</div>
-	</body>
+                <div id="content">
+                <a class="active" href="empress_index3.html">Home</a>    
+                <a class="button" href="empress_about.html">About</a> 
+                <a class="button" href="empress_events.html">Events</a> 
+                <a class="button" href="empress_signup.html">Sign Up</a> 
+                <a class="button" href="empress_contact.html">Contact</a> 
+            </div>
+            <div id="footer">
+                Empower. Educate. Enlighten. Encourage. <br>
+                W.O.M.E.N. (Women Meeting Employable Needs) Project
+            </div>
+        </div>
+    </body>
 </html>
