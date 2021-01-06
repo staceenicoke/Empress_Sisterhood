@@ -15,7 +15,34 @@
                 </h1>
             </div>
             
-            <div id="left-panel">                              
+            <div id="left-panel">    
+                
+                <script>
+
+                    function validateForm() {
+                      var x = document.forms["signup"]["fname"].value;
+                      if (x == "") {
+                        alert("First name must be filled out");
+                        return false;
+                      }
+                      var y = document.forms["signup"]["lname"].value;
+                      if (y == "") {
+                        alert("Last name must be filled out");
+                        return false;
+                      }
+                      var z = document.forms["signup"]["email"].value;
+                      if (z == "") {
+                        alert("Please enter valid email");
+                        return false;
+                      }
+                      var num = document.forms["signup"]["phone"].value;
+                      if (num == "") {
+                        alert("Please enter valid phone number");
+                        return false;
+                      }
+                    }
+                    </script>
+                
                 <section>
                 <h3>Empress Sign Up</h3>
                 <p>With an abundance of caution and based on new recommendations surrounding COVID-19, 
@@ -23,7 +50,8 @@
                 provide the information needed to join the virtual gathering.<br>
                 Please complete the form below to receive details of the next meeting.</p>
 
-                <form action=mailto:amarshall@communicare.org method="post" enctype="text/plain">
+                <form action=mailto:amarshall@communicare.org name="signup" method="post" enctype="text/plain"
+                onsubmit="return validateForm()">
                     <label for="fname">First Name:</label><br>
                         <input type="text" id= fname name="First Name "><br>
                     <label for="lname">Last Name:</label><br>

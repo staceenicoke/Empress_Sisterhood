@@ -30,7 +30,7 @@
                         return false;
                       }
                       var z = document.forms["contact"]["email"].value;
-                      if (z !== "/\S+@\S+\.\S+/") {
+                      if (z == "") {
                         alert("Please enter valid email");
                         return false;
                       }
