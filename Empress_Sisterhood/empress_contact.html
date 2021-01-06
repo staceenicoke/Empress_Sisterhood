@@ -20,13 +20,18 @@
 
                     function validateForm() {
                       var x = document.forms["contact"]["fname"].value;
-                      if (x == "" || x==null) {
+                      if (x == "") {
                         alert("First name must be filled out");
                         return false;
                       }
                       var y = document.forms["contact"]["lname"].value;
                       if (y == "") {
                         alert("Last name must be filled out");
+                        return false;
+                      }
+                      var z = document.forms["contact"]["email"].value;
+                      if (z !== "/\S+@\S+\.\S+/") {
+                        alert("Please enter valid email");
                         return false;
                       }
                     }
