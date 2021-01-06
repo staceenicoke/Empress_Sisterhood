@@ -15,7 +15,23 @@
                 </h1>
             </div>
             
-            <div id="left-panel">                              
+            <div id="left-panel">       
+                <script>
+
+                    function validateForm() {
+                      var x = document.forms["contact"]["fname"].value;
+                      if (x == "" || x==null) {
+                        alert("First name must be filled out");
+                        return false;
+                      }
+                      var y = document.forms["contact"]["lname"].value;
+                      if (y == "") {
+                        alert("Last name must be filled out");
+                        return false;
+                      }
+                    }
+                    </script>
+                
                 <section>
                 <h3>Contact</h3>
                 <p>The W.O.M.E.N (Women Meeting Employable Needs) Project provides services 
@@ -23,7 +39,9 @@
                 For inquiries on W.O.M.E.N (Women Meeting Employable Needs) Project please
                 email us using the form below and someone will contact you.</p>
                 
-                <form action="mailto:amarshall@communicare.org" name="W.O.M.E.N Project Contact Form" method="post" enctype="text/plain">
+                <form action="mailto:amarshall@communicare.org" name="contact" method="post" enctype="text/plain"
+                onsubmit="return validateForm()">
+
                     <label for="fname">First Name:</label><br>
                         <input type="text" id= fname name="First Name "><br>
                     <label for="lname">Last Name:</label><br>
