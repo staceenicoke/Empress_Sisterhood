@@ -183,10 +183,7 @@ h3 {
 
 @media only screen and (max-width:768px) {
   /* For mobile phones: */
-div:nth-of-type(4) {
-    flex-shrink: 2;
-    flex-grow: 2;
-  }
+
 #page-wrapper {
     display: flex;
         flex-flow:column;

@@ -35,6 +35,15 @@
                         return false;
                       }
                     }
+                    function resetPop() {
+                    alert("Form Reset");
+                    }
+                    function contactPop() {
+                    var fname = document.getElementById("fname").value;
+                    var lname = document.getElementById("lname").value;
+                    alert("Thank You " + fname + " " + lname + "!  We will contact you soon");
+                    }
+
                     </script>
                 
                 <section>
@@ -55,8 +64,8 @@
                         <input type="email" id=email name="Email "><br>
                     <label for="comment">Comment:</label><br>
                         <input type="text" id=comment name="Comments " size=50><br><br>
-                <input type="submit" class="button1" value="Send">
-                <input type="reset" class="button1" value="Reset">
+                <input type="submit" class="button1" value="Send" onclick="contactPop()">
+                <input type="reset" class="button1" value="Reset" onclick="resetPop()">
             </section>
                 </form>
             

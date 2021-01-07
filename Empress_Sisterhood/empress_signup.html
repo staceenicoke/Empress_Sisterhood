@@ -41,6 +41,15 @@
                         return false;
                       }
                     }
+                    function resetPop() {
+                    alert("Form Reset");
+                    }
+                    function signupPop() {
+                    var fname = document.getElementById("fname").value;
+                    var lname = document.getElementById("lname").value;
+                    alert("Welcome to the Royal Ranks Empress " + fname + " " + lname + "!  We will contact you soon");
+                    }
+
                     </script>
                 
                 <section>
@@ -60,8 +69,8 @@
                         <input type="email" id=email name="Email "><br>
                     <label for="phone">Phone:</label><br>
                         <input type="tel" id=phone name="phone" size=50><br><br>
-                <input type="submit" class="button1" value="Submit">
-                <input type="reset" class="button1" value="Reset">
+                <input type="submit" class="button1" value="Submit"onclick="signupPop()">
+                <input type="reset" class="button1" value="Reset"onclick="resetPop()">
           
                 </form>
             </section>
